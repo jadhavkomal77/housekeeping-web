@@ -173,13 +173,13 @@ const Home = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid lg:grid-cols-2 gap-12 items-center">
                     <div>
                         <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                            Professional <span className="block text-blue-200">Cleaning Services</span>
+                            Professional <span className="block text-yellow-300">Cleaning Services</span>
                         </h1>
                         <p className="text-xl md:text-2xl mb-8 text-blue-100">
                             Make your home and office clean, safe and healthy with our professional services
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <Link to="/services" className="inline-flex items-center px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg shadow-lg transform hover:scale-105 transition-all">
+                            <Link to="/services" className="inline-flex items-center px-8 py-4 bg-yellow-500 hover:bg-yellow-600 text-black font-bold rounded-lg shadow-lg transform hover:scale-105 transition-all">
                                 View Services <ArrowRight className="ml-2 w-5 h-5" />
                             </Link>
                             <Link to="/contact" className="inline-flex items-center px-8 py-4 border-2 border-white hover:bg-white hover:text-blue-700 font-semibold rounded-lg transition-all">
