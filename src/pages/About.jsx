@@ -1,6 +1,6 @@
 import React from "react";
 import workers2 from '../assets/pexels-photo.jpg';
-import { Users, Award, Shield, Heart } from "lucide-react";
+import { Users, Award, Shield, Heart, Clock, Star, Leaf, Headphones } from "lucide-react";
 
 const About = () => {
     React.useEffect(() => {
@@ -25,10 +25,12 @@ const About = () => {
                     <div>
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
                         <p className="text-gray-700 mb-6 leading-relaxed">
-                            Smart Clean Solutions, established in 2019, is a leading housekeeping and cleaning services company. We started small and have now become a trusted name in Maharashtra.
+                            Smart Clean Solutions, established in 2019, is a leading housekeeping and cleaning services company.
+                            We started small and have now become a trusted name in Maharashtra.
                         </p>
                         <p className="text-gray-700 mb-6 leading-relaxed">
-                            Our mission is to ensure cleanliness and health in every home and office. With our team of trained workers, we provide all types of cleaning and maintenance services.
+                            Our mission is to ensure cleanliness and health in every home and office.
+                            With our team of trained workers, we provide all types of cleaning and maintenance services.
                         </p>
                         <div className="grid grid-cols-2 gap-6">
                             <div className="p-6 bg-white rounded-xl shadow-md text-center">
@@ -73,23 +75,26 @@ const About = () => {
                 </div>
             </section>
 
-            {/* Team Section */}
+            {/* Why Choose Us Section */}
             <section className="py-16 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Team</h2>
-                        <p className="text-gray-600">Experienced and trained professionals</p>
+                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose Us</h2>
+                        <p className="text-gray-600">We make cleaning hassle-free, reliable, and affordable</p>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                         {[
-                            { name: "Rahul Sharma", role: "Managing Director", img: "https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&cs=tinysrgb&w=300" },
-                            { name: "Priya Patil", role: "Operations Head", img: "https://images.pexels.com/photos/3771111/pexels-photo-3771111.jpeg?auto=compress&cs=tinysrgb&w=300" },
-                            { name: "Amit Deshmukh", role: "Quality Manager", img: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=300" },
-                        ].map((member, idx) => (
-                            <div key={idx} className="text-center bg-white rounded-xl shadow-sm p-8 hover:shadow-md transition-shadow duration-300">
-                                <img src={member.img} alt={member.name} className="w-32 h-32 object-cover rounded-full mx-auto mb-4 shadow" />
-                                <h3 className="text-xl font-semibold text-gray-900">{member.name}</h3>
-                                <p className="text-gray-600">{member.role}</p>
+                            { icon: Clock, title: "On-Time Service", description: "Always punctual and reliable" },
+                            { icon: Star, title: "Affordable Pricing", description: "Best services at the right cost" },
+                            { icon: Leaf, title: "Eco-Friendly", description: "Safe & sustainable cleaning methods" },
+                            { icon: Headphones, title: "24/7 Support", description: "Customer care anytime you need" },
+                        ].map((reason, index) => (
+                            <div key={index} className="p-8 bg-white rounded-xl shadow-sm hover:shadow-md text-center transition-shadow duration-300">
+                                <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-indigo-600">
+                                    <reason.icon className="w-8 h-8 text-white" />
+                                </div>
+                                <h3 className="text-xl font-semibold text-gray-900 mb-2">{reason.title}</h3>
+                                <p className="text-gray-600">{reason.description}</p>
                             </div>
                         ))}
                     </div>
