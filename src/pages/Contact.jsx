@@ -143,7 +143,7 @@ const Contact = () => {
                             </button>
 
                             <a
-                                href={`https://wa.me/${whatsappNumber}?text=Hi%20Smart%20Clean%20Solutions,%20I%20want%20to%20book%20a%20service`}
+                                href={`https://wa.me/${9920725398}?text=Hi%20Smart%20Clean%20Solutions,%20I%20want%20to%20book%20a%20service`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="flex-1 inline-flex items-center justify-center bg-green-500 hover:bg-green-600 text-white py-4 px-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 space-x-2"
@@ -179,7 +179,7 @@ const Contact = () => {
                         <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Contact Information</h2>
                         <div className="space-y-6">
                             {[
-                                { icon: Phone, title: 'Phone Number', lines: ['+91 98765 43210', '+91 87654 32109'], note: '8:00 AM to 10:00 PM' },
+                                { icon: Phone, title: 'Phone Number', lines: ['+91 99207 25398', '+91 87791 46166'], note: '8:00 AM to 10:00 PM' },
                                 { icon: Mail, title: 'Email Address', lines: ['info@smartcleansolutions.com', 'services@smartcleansolutions.com'] },
                                 { icon: MapPin, title: 'Office Address', lines: ['Shop No. 15, Shivaji Complex,', 'Near City Mall, Pune Road,', 'Maharashtra - 411001'] },
                                 { icon: Clock, title: 'Working Hours', lines: ['Mon - Sat: 8:00 AM - 8:00 PM', 'Sunday: 9:00 AM - 6:00 PM'], note: 'Emergency: 24/7 Available', noteColor: 'text-red-600' }

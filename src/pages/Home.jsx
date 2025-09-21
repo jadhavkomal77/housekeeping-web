@@ -78,7 +78,7 @@ const Home = () => {
                                 <div className="text-gray-700">Happy Customers</div>
                             </div>
                             <div className="text-center p-4 bg-white rounded-lg shadow-md">
-                                <div className="text-2xl font-bold text-indigo-600">50+</div>
+                                <div className="text-2xl font-bold text-indigo-600">20+</div>
                                 <div className="text-gray-700">Cities Served</div>
                             </div>
                         </div>
