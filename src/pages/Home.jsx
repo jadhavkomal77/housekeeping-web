@@ -63,14 +63,13 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-
-            {/* About Snippet */}
+            {/* about Section */}
             <section className="py-16 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
                     <div>
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">About Us</h2>
                         <p className="text-lg text-gray-700 mb-6">
-                            Smart Clean Solutions is a professional cleaning service provider company. We have been providing high quality housekeeping, deep cleaning, pest control and other home maintenance services across Maharashtra for the past 5 years.
+                            Smart Clean Solutions is a professional cleaning service provider company...
                         </p>
                         <div className="grid grid-cols-2 gap-6 mb-8">
                             <div className="text-center p-4 bg-white rounded-lg shadow-md">
@@ -82,15 +81,27 @@ const Home = () => {
                                 <div className="text-gray-700">Cities Served</div>
                             </div>
                         </div>
-                        <Link to="/about" className="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg">
-                            Learn More <ArrowRight className="ml-2 w-4 h-4" />
-                        </Link>
+                        <div className="flex gap-4">
+                            <Link
+                                to="/about"
+                                className="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg"
+                            >
+                                Learn More <ArrowRight className="ml-2 w-4 h-4" />
+                            </Link>
+                            <Link
+                                to="/reviews"
+                                className="inline-flex items-center px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg transition-transform transform hover:scale-105"
+                            >
+                                Reviews <ArrowRight className="ml-2 w-4 h-4" />
+                            </Link>
+                        </div>
                     </div>
                     <div className="relative">
                         <img src={teamImg} alt="Our Team" className="w-full h-96 object-cover rounded-2xl shadow-2xl" />
                     </div>
                 </div>
             </section>
+
         </div>
     );
 };

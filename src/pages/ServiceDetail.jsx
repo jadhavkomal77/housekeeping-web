@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { servicesData } from '../pages/servicesData';
@@ -12,7 +13,10 @@ const ServiceDetail = () => {
             <div className="py-16 text-center">
                 <h2 className="text-3xl font-bold">Service Not Found</h2>
                 <p className="mt-4 text-gray-600">The service you are looking for does not exist.</p>
-                <Link to="/services" className="mt-6 inline-block bg-blue-600 text-white px-6 text-2xl py-2 rounded hover:bg-blue-800 transition">
+                <Link
+                    to="/services"
+                    className="mt-6 inline-block bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-800 transition"
+                >
                     Back to Services
                 </Link>
             </div>
@@ -33,16 +37,21 @@ const ServiceDetail = () => {
                     </Link>
                 </div>
 
-
                 {/* Title & Description */}
                 <h1 className="text-4xl font-bold mb-4">{service.title}</h1>
                 <p className="text-gray-700 mb-8">{service.description}</p>
 
                 {/* Image */}
-                <img
+                {/* <img
                     src={service.image}
                     alt={service.title}
                     className="w-full h-96 object-cover rounded-xl shadow-md mb-12"
+                    onError={(e) => { e.target.src = 'https://via.placeholder.com/800x400?text=Service+Image'; }}
+                /> */}
+                <img
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full max-h-[500px] object-contain rounded-xl shadow-md mb-12 bg-white"
                     onError={(e) => { e.target.src = 'https://via.placeholder.com/800x400?text=Service+Image'; }}
                 />
 
@@ -93,16 +102,16 @@ const ServiceDetail = () => {
                     </div>
                 )}
 
-                {/* Book Now */}
-
+                {/* Book Now Button */}
                 <div className="text-center">
                     <Link
                         to="/contact"
-                        className="bg-blue-600 hover:bg-blue-800 text-white py-3 px-8 rounded-lg shadow-4xl hover:shadow-2xl transition-all duration-300"
+                        className="bg-blue-600 hover:bg-blue-800 text-white py-3 px-8 rounded-lg shadow-lg transition-all duration-300"
                     >
                         Book Now
                     </Link>
                 </div>
+
             </div>
         </div>
     );
