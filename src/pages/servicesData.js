@@ -1,11 +1,34 @@
-// import Housemaid from "/public/Housemaid Service.jpeg"
+// import Housemaid from '../assets/Housemaid-Service.jpeg';
+// import FullHome from '../assets/Full Home Deep Cleaning.jpeg';
+// import SofaCarpet from '../assets/Sofa & Carpet Cleaning.jpeg';
+// import PestControl from '../assets/Pest Control Services.jpeg';
+// import EventHousekeeping from '../assets/Event Housekeeping.jpeg';
+// import HotelDeepCleaning from '../assets/Hotel Deep Cleaning.jpeg';
+// import CarWash from '../assets/Car Wash Service.png';
+// import GarbageDisposal from '../assets/Garbage Disposal Service.jpeg';
+// import Light from '../assets/Light & Jhumar Cleaning.jpeg';
+// import SignBoard from '../assets/Sign Board Cleaning.jpeg';
+// import OfficeHousekeeping from '../assets/Office Housekeeping.jpeg';
+
+import Housemaid from '../assets/Housemaid Service.jpeg';
+import FullHome from '../assets/Full Home Deep Cleaning.jpeg';
+import Sofa from '../assets/Sofa & Carpet Cleaning.jpeg';
+import PestControl from '../assets/Pest Control Services.jpeg';
+import EventHousekeeping from '../assets/Event Housekeeping.jpeg';
+import HotelDeepCleaning from '../assets/Hotel Deep Cleaning.jpeg';
+import CarWash from '../assets/Car Wash Service.png';
+import GarbageDisposal from '../assets/Garbage Disposal Service.jpeg';
+import Light from '../assets/Light & Jhumar Cleaning.jpeg';
+import SignBoard from '../assets/Sign Board Cleaning.jpeg';
+import OfficeHousekeeping from '../assets/Office Housekeeping.jpeg';
+
 
 export const servicesData = [
     {
         slug: 'housemaid-service',
         title: 'Housemaid Service',
         description: 'Housemaid service available for part time, full time and 24 hours – ladies & gents.',
-        image: '/Housemaid Service.jpeg',
+        image: Housemaid,
         features: ['Part Time / Full Time / 24 Hours', 'Ladies & Gents Available', 'Cooking, Cleaning, Laundry', 'Elderly Care Support'],
         time: '2-8 hours',
         price: '₹499 onwards',
@@ -26,7 +49,7 @@ export const servicesData = [
         slug: 'full-home-deep-cleaning',
         title: 'Full Home Deep Cleaning',
         description: 'Complete deep cleaning of entire home - kitchen, bathroom, bedroom, hall complete cleaning of all areas.',
-        image: '/Full Home Deep Cleaning.jpeg',
+        image: FullHome,
         features: ['Kitchen Deep Clean', 'Bathroom Sanitization', 'Floor Mopping & Polishing', 'Window & Glass Cleaning'],
         time: '3-6 hours',
         price: '₹799 onwards',
@@ -46,9 +69,9 @@ export const servicesData = [
     },
     {
         slug: 'sofa-carpet-cleaning',
-        title: 'Sofa & Carpet Cleaning',
+        title: 'sofa carpet cleaning',
         description: 'Professional sofa and carpet cleaning - stain removal, odor elimination and sanitization.',
-        image: '/Sofa & Carpet Cleaning.jpeg',
+        image: Sofa,
         features: ['Stain Removal', 'Deep Vacuum Cleaning', 'Fabric Protection', 'Odor Elimination'],
         time: '1-3 hours',
         price: '₹549 onwards',
@@ -68,9 +91,9 @@ export const servicesData = [
     },
     {
         slug: 'pest-control-services',
-        title: 'Pest Control Services',
+        title: 'Pest ControlServices',
         description: 'Pest control - complete protection from cockroaches, ants, rats and other insects.',
-        image: '/Pest Control Services.jpeg',
+        image: PestControl,
         features: ['Cockroach Treatment', 'Ant Control', 'Rodent Control', 'Termite Treatment'],
         time: '2-4 hours',
         price: '₹699 onwards',
@@ -91,7 +114,7 @@ export const servicesData = [
         slug: 'event-housekeeping',
         title: 'Event Housekeeping',
         description: 'Professional housekeeping staff for weddings, parties, exhibitions and corporate events.',
-        image: '/Event Housekeeping.jpeg',
+        image: EventHousekeeping,
         features: ['Pre-event cleaning', 'During-event support', 'Post-event deep cleaning', 'Waste disposal management'],
         time: '4-12 hours',
         price: '₹1499 onwards',
@@ -112,7 +135,7 @@ export const servicesData = [
         slug: 'hotel-deep-cleaning',
         title: 'Hotel Deep Cleaning',
         description: 'Complete deep cleaning and sanitization for hotels, restaurants and resorts.',
-        image: '/Hotel Deep Cleaning.jpeg',
+        image: HotelDeepCleaning,
         features: ['Kitchen Deep Cleaning', 'Guest Room Sanitization', 'Lobby & Reception Cleaning', 'Washroom Deep Clean'],
         time: '6-12 hours',
         price: '₹2999 onwards',
@@ -134,7 +157,7 @@ export const servicesData = [
         slug: 'car-wash-service',
         title: 'Car Wash Service',
         description: 'Professional car washing and detailing service at home.',
-        image: '/Car Wash Service.png',
+        image: CarWash,
         features: ['Exterior Washing', 'Interior Vacuuming', 'Foam Wash & Shampoo', 'Polishing & Waxing'],
         time: '1-2 hours',
         price: '₹399 onwards',
@@ -155,7 +178,7 @@ export const servicesData = [
         slug: 'garbage-disposal-service',
         title: 'Garbage Disposal Service',
         description: 'Waste management service - daily waste collection and proper disposal.',
-        image: '/Garbage Disposal Service.jpeg',
+        image: GarbageDisposal,
         // image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxlfNydw2QaIMRCeVTRDCvGIqbzojUSV4dSA&s',
         features: ['Daily Waste Collection', 'Segregation Service', 'Eco-friendly Disposal', 'Recycling Support'],
         time: '1-2 hours',
@@ -177,7 +200,7 @@ export const servicesData = [
         slug: 'light-jhumar-cleaning',
         title: 'Light & Jhumar Cleaning',
         description: 'Light and chandelier cleaning - careful cleaning of all types of lighting fixtures.',
-        image: '/Light & Jhumar Cleaning.jpeg',
+        image: Light,
         // image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB-RMLE7s8jZdF5EZckqS446NCmfO9nsxAkA&s',
         features: ['Chandelier Cleaning', 'LED Light Maintenance', 'Ceiling Fan Cleaning', 'Decorative Light Care'],
         time: '1-2 hours',
@@ -199,7 +222,7 @@ export const servicesData = [
         slug: 'sign-board-cleaning',
         title: 'Sign Board Cleaning',
         description: 'Sign board cleaning - cleaning of sign boards for shops, offices and commercial properties.',
-        image: '/Sign Board Cleaning.jpeg',
+        image: SignBoard,
         // image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_AA4YmTMawUyLklzHwhLgBf1w7sIdxENa7Q&s',
         features: ['Acrylic Board Cleaning', 'Metal Sign Maintenance', 'LED Display Cleaning', 'Hoarding Washing'],
         time: '1-3 hours',
@@ -221,7 +244,7 @@ export const servicesData = [
         slug: 'office-housekeeping',
         title: 'Office Housekeeping',
         description: 'Office housekeeping - daily cleaning services for commercial spaces, shops and offices.',
-        image: '/Office Housekeeping.jpeg',
+        image: OfficeHousekeeping,
         // image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE4CJdlB4pasV8LKUg8WgyiZBwfsZxOtXYgg&s',
         features: ['Daily Office Cleaning', 'Washroom Maintenance', 'Floor Care', 'Workspace Sanitization'],
         time: '2-6 hours',
