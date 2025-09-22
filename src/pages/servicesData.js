@@ -1,14 +1,3 @@
-// import Housemaid from '../assets/Housemaid-Service.jpeg';
-// import FullHome from '../assets/Full Home Deep Cleaning.jpeg';
-// import SofaCarpet from '../assets/Sofa & Carpet Cleaning.jpeg';
-// import PestControl from '../assets/Pest Control Services.jpeg';
-// import EventHousekeeping from '../assets/Event Housekeeping.jpeg';
-// import HotelDeepCleaning from '../assets/Hotel Deep Cleaning.jpeg';
-// import CarWash from '../assets/Car Wash Service.png';
-// import GarbageDisposal from '../assets/Garbage Disposal Service.jpeg';
-// import Light from '../assets/Light & Jhumar Cleaning.jpeg';
-// import SignBoard from '../assets/Sign Board Cleaning.jpeg';
-// import OfficeHousekeeping from '../assets/Office Housekeeping.jpeg';
 
 import Housemaid from '../assets/Housemaid Service.jpeg';
 import FullHome from '../assets/Full Home Deep Cleaning.jpeg';
