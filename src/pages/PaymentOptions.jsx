@@ -297,7 +297,7 @@ const PaymentOptions = () => {
     };
 
     // const qrSize = Math.min(280, windowWidth * 0.7);
-    const qrSize = Math.min(250, windowWidth * 0.6);
+    const qrSize = Math.min(220, windowWidth * 0.7);
 
     return (
         <div className="bg-gray-50 py-8 px-4 md:px-12 min-h-screen overflow-x-hidden">
@@ -323,10 +323,10 @@ const PaymentOptions = () => {
                             </div>
                         </div> */}
                         <div className="flex justify-center items-center w-full">
-                            <div className="relative w-full max-w-xs rounded-xl border shadow-md p-4 bg-white hover:shadow-xl transition-transform transform hover:scale-105">
+                            <div className="relative w-full max-w-xs p-4 bg-white rounded-xl border shadow-md hover:shadow-xl transition-transform transform hover:scale-105">
                                 <QRCodeCanvas
                                     value={`upi://pay?pa=${upiId}&pn=Techno%20Housekeeping&cu=INR&tn=Payment`}
-                                    size={qrSize} // base size, will scale automatically
+                                    size={qrSize}
                                     level="H"
                                     includeMargin={true}
                                     className="w-full h-auto rounded-md"
