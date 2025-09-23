@@ -1,5 +1,5 @@
 
-import Housemaid from '../assets/Housemaid Service.jpeg';
+import housekeeping from '../assets/housekeeping Service.jpeg';
 import FullHome from '../assets/Full Home Deep Cleaning.jpeg';
 import Sofa from '../assets/Sofa & Carpet Cleaning.jpeg';
 import PestControl from '../assets/Pest Control Services.jpeg';
@@ -13,27 +13,43 @@ import OfficeHousekeeping from '../assets/Office Housekeeping.jpeg';
 
 
 export const servicesData = [
+  
     {
-        slug: 'housemaid-service',
-        title: 'Housemaid Service',
-        description: 'Housemaid service available for part time, full time and 24 hours – ladies & gents.',
-        image: Housemaid,
-        features: ['Part Time / Full Time / 24 Hours', 'Ladies & Gents Available', 'Cooking, Cleaning, Laundry', 'Elderly Care Support'],
+        slug: 'housekeeping-service',
+        title: 'Housekeeping Service',
+        description: 'Professional housekeeping service available for homes, offices, and commercial spaces. We provide both indoor and outdoor cleaning & support.',
+        image: housekeeping,
+        features: [
+            'Daily / Weekly / Monthly Packages',
+            'Part Time / Full Time / 24 Hours Staff',
+            'Ladies & Gents Staff Available',
+            'Indoor & Outdoor Cleaning',
+            'Cooking, Laundry, Elderly Care Support'
+        ],
         time: '2-8 hours',
         price: '₹499 onwards',
         steps: [
-            'Cleaning and tidying rooms',
-            'Laundry & ironing',
-            'Cooking and meal prep (optional)',
-            'Elderly care support if needed'
+            'Dusting & sweeping of rooms, hall, kitchen',
+            'Bathroom & washroom cleaning',
+            'Laundry & ironing clothes',
+            'Cooking & meal preparation (optional)',
+            'Elderly / child care support',
+            'Outdoor area cleaning (parking, garden, balcony)',
+            'Garbage disposal & segregation',
+            'Extra services on demand (festival cleaning, event support)'
         ],
         faqs: [
             {
-                question: 'Can I book a housemaid for a single day?',
-                answer: 'Yes, we offer part-time and one-day services as well as full-time options.'
+                question: 'Can I book housekeeping for one day only?',
+                answer: 'Yes, we offer single-day, weekly, and monthly packages.'
+            },
+            {
+                question: 'Do you provide staff for outdoor cleaning also?',
+                answer: 'Yes, our staff can handle outdoor areas like balconies, parking, gardens and building premises.'
             }
         ]
     },
+
     {
         slug: 'full-home-deep-cleaning',
         title: 'Full Home Deep Cleaning',

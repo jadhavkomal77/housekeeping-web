@@ -38,7 +38,7 @@ const Contact = () => {
     const contactInfo = [
         { icon: Phone, title: 'Phone', lines: ['+91 99207 25398', '+91 87791 46166'] },
         { icon: Mail, title: 'Email', lines: ['info@smartcleansolutions.com'] },
-        { icon: MapPin, title: 'Address', lines: ['Kranti Chowk, Chhatrapati Sambhajinagar, Maharashtra, India'] },
+        { icon: MapPin, title: 'Address', lines: ['Shop No.C-12, Grace Plaza Shopping Center, Swami Vivekananda Rd, opp. Sabri Masjid, Momin Nagar, Jogeshwari West, Mumbai, Maharashtra 400102'] },
         { icon: Clock, title: 'Hours', lines: ['Mon-Sat: 8AM - 8PM', 'Sun: 9AM - 6PM'], note: 'Emergency: 24/7', noteColor: 'text-red-600' }
     ];
 
@@ -196,7 +196,7 @@ const Contact = () => {
                 <div className="space-y-8">
                     <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-8">
                         <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Contact Information</h2>
-                        <div className="space-y-6">
+                        {/* <div className="space-y-6">
                             {contactInfo.map((info, idx) => (
                                 <div key={idx} className="flex items-start space-x-4">
                                     <div className={`p-3 rounded-full ${info.icon === Phone ? 'bg-blue-600' : info.icon === Mail ? 'bg-indigo-600' : info.icon === MapPin ? 'bg-purple-600' : 'bg-green-600'}`}>
@@ -209,11 +209,38 @@ const Contact = () => {
                                     </div>
                                 </div>
                             ))}
+                        </div> */}
+                        <div className="space-y-6">
+                            {contactInfo.map((info, idx) => (
+                                <div key={idx} className="flex items-start space-x-4">
+                                    <div className={`p-3 rounded-full ${info.icon === Phone ? 'bg-blue-600' : info.icon === Mail ? 'bg-indigo-600' : info.icon === MapPin ? 'bg-purple-600' : 'bg-green-600'}`}>
+                                        <info.icon className="w-6 h-6 text-white" />
+                                    </div>
+                                    <div className="flex-1 overflow-x-auto"> {/* add flex-1 and overflow-x-auto */}
+                                        <h3 className="font-semibold text-gray-900">{info.title}</h3>
+                                        {info.lines.map((line, i) => {
+                                            if (info.icon === Phone) {
+                                                return <p key={i} className="text-gray-600 break-all">
+                                                    <a href={`tel:${line}`} className="hover:underline">{line}</a>
+                                                </p>
+                                            } else if (info.icon === Mail) {
+                                                return <p key={i} className="text-gray-600 break-all">
+                                                    <a href={`mailto:${line}`} className="hover:underline">{line}</a>
+                                                </p>
+                                            } else {
+                                                return <p key={i} className="text-gray-600">{line}</p>
+                                            }
+                                        })}
+                                        {info.note && <p className={`${info.noteColor || 'text-gray-500'} text-sm`}>{info.note}</p>}
+                                    </div>
+                                </div>
+                            ))}
                         </div>
+
                     </div>
 
                     {/* Google Map */}
-                    <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-8">
+                    {/* <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-8">
                         <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Our Location</h2>
                         <div className="w-full h-80">
                             <iframe
@@ -227,7 +254,23 @@ const Contact = () => {
                                 referrerPolicy="no-referrer-when-downgrade"
                             ></iframe>
                         </div>
+                    </div> */}
+                    <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-8">
+                        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Our Location</h2>
+                        <div className="w-full h-80">
+                            <iframe
+                                title="Smart Clean Solutions Location"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.314533264033!2d72.84260637521137!3d19.12218958210088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c96d43f43d1f%3A0xf9b70c8d540d1d64!2sGrace%20Plaza%2C%20Swami%20Vivekananda%20Rd%2C%20opp.%20Sabri%20Masjid%2C%20Momin%20Nagar%2C%20Jogeshwari%20West%2C%20Mumbai%2C%20Maharashtra%20400102!5e0!3m2!1sen!2sin!4v1727099600000!5m2!1sen!2sin"
+                                width="100%"
+                                height="100%"
+                                className="rounded-xl border-0"
+                                allowFullScreen
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                        </div>
                     </div>
+
                 </div>
             </div >
         </div >
@@ -235,5 +278,6 @@ const Contact = () => {
 };
 
 export default Contact;
+
 
 

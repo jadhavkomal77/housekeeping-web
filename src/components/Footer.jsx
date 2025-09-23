@@ -11,12 +11,7 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {/* Company Info */}
                     <div className="space-y-4">
-                        {/* <div className="flex items-center space-x-2">
-                            <div className="bg-blue-600 p-2 rounded">
-                                <Home className="w-6 h-6 text-white" />
-                            </div>
-                            <span className="text-xl font-bold">Smart Clean Solutions</span>
-                        </div> */}
+
                         <Link to="/" className="flex items-center space-x-2">
                             {/* Logo */}
                             <img
@@ -76,8 +71,7 @@ const Footer = () => {
                             <div className="flex items-start space-x-3">
                                 <MapPin className="w-4 h-4 mt-1" />
                                 <span className="text-sm">
-                                    Shop No. 15, Shivaji Complex,<br />
-                                    Pune Road, Maharashtra
+                                    Grace Plaza, A302/303, Swami Vivekananda Rd, opp. Sabri Masjid, Momin Nagar, Jogeshwari West, Mumbai, Maharashtra 400102
                                 </span>
                             </div>
                         </div>
