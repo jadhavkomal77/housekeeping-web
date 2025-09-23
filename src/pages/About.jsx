@@ -43,9 +43,7 @@ const About = () => {
                             </div>
                         </div>
                     </div>
-                    {/* <div>
-                        <img src={workers2} alt="Our Team Working" className="w-full h-96 object-cover rounded-2xl shadow-md" />
-                    </div> */}
+                    
                     <div>
                         <div className="aspect-video">
                             <img

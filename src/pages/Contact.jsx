@@ -196,20 +196,7 @@ const Contact = () => {
                 <div className="space-y-8">
                     <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-8">
                         <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Contact Information</h2>
-                        {/* <div className="space-y-6">
-                            {contactInfo.map((info, idx) => (
-                                <div key={idx} className="flex items-start space-x-4">
-                                    <div className={`p-3 rounded-full ${info.icon === Phone ? 'bg-blue-600' : info.icon === Mail ? 'bg-indigo-600' : info.icon === MapPin ? 'bg-purple-600' : 'bg-green-600'}`}>
-                                        <info.icon className="w-6 h-6 text-white" />
-                                    </div>
-                                    <div>
-                                        <h3 className="font-semibold text-gray-900">{info.title}</h3>
-                                        {info.lines.map((line, i) => <p key={i} className="text-gray-600">{line}</p>)}
-                                        {info.note && <p className={`${info.noteColor || 'text-gray-500'} text-sm`}>{info.note}</p>}
-                                    </div>
-                                </div>
-                            ))}
-                        </div> */}
+                        
                         <div className="space-y-6">
                             {contactInfo.map((info, idx) => (
                                 <div key={idx} className="flex items-start space-x-4">
@@ -240,21 +227,7 @@ const Contact = () => {
                     </div>
 
                     {/* Google Map */}
-                    {/* <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-8">
-                        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Our Location</h2>
-                        <div className="w-full h-80">
-                            <iframe
-                                title="Smart Clean Solutions Location"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3779.998434054246!2d75.331010!3d19.876540!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd5b1234567890%3A0xabcdef1234567890!2sKranti%20Chowk%2C%20Chhatrapati%20Sambhajinagar%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1695360000000!5m2!1sen!2sin"
-                                width="100%"
-                                height="100%"
-                                className="rounded-xl border-0"
-                                allowFullScreen
-                                loading="lazy"
-                                referrerPolicy="no-referrer-when-downgrade"
-                            ></iframe>
-                        </div>
-                    </div> */}
+                    
                     <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-8">
                         <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Our Location</h2>
                         <div className="w-full h-80">

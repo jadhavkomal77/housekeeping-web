@@ -30,11 +30,7 @@ const Home = () => {
                             </Link>
                         </div>
                     </div>
-                    {/* <div className="relative">
-                        <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-                            <img src={workers} alt="Professional Cleaning Service" className="w-full h-80 object-cover rounded-xl shadow-2xl" />
-                        </div>
-                    </div> */}
+                   
                     <div className="relative">
                         <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20">
                             <div className="aspect-video">
@@ -108,9 +104,7 @@ const Home = () => {
                             </Link>
                         </div>
                     </div>
-                    {/* <div className="relative">
-                        <img src={teamImg} alt="Our Team" className="w-full h-96 object-cover rounded-2xl shadow-2xl" />
-                    </div> */}
+                   
                     <div className="relative">
                         <div className="aspect-video">
                             <img

@@ -40,7 +40,7 @@ const Navbar = () => {
                                         : "text-blue-600 hover:bg-blue-50 hover:shadow-sm"
                                         }`}
                                 >
-                                    {/* render icon only if exists */}
+                                 
                                     {Icon && <Icon className={`w-4 h-4 ${isActive ? "text-white" : "text-blue-600"}`} />}
                                     <span>{item.name}</span>
                                 </Link>
