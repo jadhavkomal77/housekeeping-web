@@ -37,8 +37,8 @@ const ServiceDetail = () => {
                     </Link>
                 </div>
 
-                <h1 className="text-4xl font-bold mb-4">{service.title}</h1>
-                <p className="text-gray-700 mb-8">{service.description}</p>
+                <h1 className="text-5xl font-bold mb-4">{service.title}</h1>
+                <p className="text-gray-700 text-2xl mb-8">{service.description}</p>
 
                 {/* Image */}
                 {/* <img
@@ -57,7 +57,7 @@ const ServiceDetail = () => {
                 {/* Features */}
                 <div className="mb-12">
                     <h2 className="text-2xl font-semibold mb-4">Key Features</h2>
-                    <ul className="space-y-2">
+                    <ul className="space-y-2 text-lg">
                         {service.features.map((feature, idx) => (
                             <li key={idx} className="flex items-center text-gray-700">
                                 <ChevronRight className="w-5 h-5 text-blue-600 mr-2" /> {feature}
@@ -69,14 +69,14 @@ const ServiceDetail = () => {
                 {/* Steps / Process */}
                 <div className="mb-12">
                     <h2 className="text-2xl font-semibold mb-4">Our Process</h2>
-                    <ol className="list-decimal list-inside space-y-2 text-gray-700">
+                    <ol className="list-decimal list-inside space-y-2 text-lg text-gray-700">
                         {service.steps.map((step, idx) => <li key={idx}>{step}</li>)}
                     </ol>
                 </div>
 
                 {/* Time & Price */}
-                <div className="mb-12 grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div className="bg-white p-6 rounded-xl shadow-md">
+                <div className="mb-12 grid grid-cols-1 md:grid-cols-2 text-md gap-6">
+                    <div className="bg-white p-6 rounded-xl  shadow-md">
                         <h3 className="font-semibold mb-2">Approx. Time</h3>
                         <p>{service.time}</p>
                     </div>
@@ -92,7 +92,7 @@ const ServiceDetail = () => {
                         <h2 className="text-2xl font-semibold mb-4">FAQs</h2>
                         <div className="space-y-4">
                             {service.faqs.map((faq, idx) => (
-                                <div key={idx} className="bg-white p-6 rounded-xl shadow-md">
+                                <div key={idx} className="bg-white p-6 rounded-xl text-lg shadow-md">
                                     <h3 className="font-semibold mb-2">{faq.question}</h3>
                                     <p>{faq.answer}</p>
                                 </div>
