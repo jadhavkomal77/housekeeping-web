@@ -40,7 +40,7 @@ const Home = () => {
                             variants={fadeInUp}
                             className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight"
                         >
-                            Professional <span className="block text-yellow-400">Cleaning Services</span>
+                            Welcome to <span className="block text-yellow-400">Techno Housekeeping</span>
                         </motion.h1>
 
                         <motion.p
