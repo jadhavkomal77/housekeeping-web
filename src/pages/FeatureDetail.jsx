@@ -163,7 +163,7 @@ const FeatureDetail = () => {
                 <motion.div whileHover={{ scale: 1.05 }}>
                     <Link
                         to="/"
-                        className="inline-flex items-center px-6 py-3 bg-gray-700 hover:bg-gray-900 text-white font-semibold rounded-lg shadow-md"
+                        className="inline-flex items-center px-6 py-3 bg-blue-700 hover:bg-blue-900 text-white font-semibold rounded-lg shadow-md"
                     >
                         <ArrowLeft className="mr-2 w-4 h-4" />
                         Back to Home
