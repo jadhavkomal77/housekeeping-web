@@ -12,7 +12,7 @@ const Footer = () => {
 
                     <div className="space-y-4">
 
-                        <Link to="/" className="flex items-center space-x-2">
+                        {/* <Link to="/" className="flex items-center space-x-2">
 
                             <img
                                 src={logo}
@@ -23,6 +23,16 @@ const Footer = () => {
 
                             <span className="text-xl font-bold text-blue-600">
                                 Techno Housekeeping
+                            </span>
+                        </Link> */}
+                        <Link to="/" className="flex items-center space-x-3 group">
+                            <img
+                                src={logo}
+                                alt="Techno Housekeeping Logo"
+                                className="h-12 w-12 object-contain rounded-full shadow-md border border-gray-200 transition-transform duration-300 group-hover:scale-110"
+                            />
+                            <span className="text-xl sm:text-2xl font-extrabold tracking-tight text-blue-700">
+                                Techno <span className="text-yellow-500">Housekeeping</span>
                             </span>
                         </Link>
 
