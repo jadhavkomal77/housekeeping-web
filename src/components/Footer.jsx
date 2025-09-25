@@ -22,7 +22,7 @@ const Footer = () => {
 
 
                             <span className="text-xl font-bold text-blue-600">
-                                Smart Clean Solutions
+                                Techno Housekeeping
                             </span>
                         </Link>
 
