@@ -13,7 +13,7 @@ const Navbar = () => {
         { path: "/services", name: "Services", icon: Briefcase },
         { path: "/payment", name: "Payment", icon: CreditCard },
         { path: "/contact", name: "Contact", icon: Phone },
-        { path: "/recentwork", name: "Recent Work", icon: Image },
+        { path: "/recentwork", name: "Gallery", icon: Image },
     ];
 
     return (
@@ -40,7 +40,7 @@ const Navbar = () => {
                                         : "text-blue-600 hover:bg-blue-50 hover:shadow-sm"
                                         }`}
                                 >
-                                 
+
                                     {Icon && <Icon className={`w-4 h-4 ${isActive ? "text-white" : "text-blue-600"}`} />}
                                     <span>{item.name}</span>
                                 </Link>

@@ -11,6 +11,7 @@ import Contact from './pages/Contact';
 import PaymentOptions from './pages/PaymentOptions';
 import ReviewsPage from './pages/ReviewsPage';
 import RecentWork from "./pages/RecentWork";
+import FeatureDetail from './pages/FeatureDetail';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/reviews" element={<ReviewsPage />} />
             <Route path="/recentwork" element={<RecentWork />} />
+             <Route path="/feature/:slug" element={<FeatureDetail />} />
           </Routes>
         </div>
         <Footer />
