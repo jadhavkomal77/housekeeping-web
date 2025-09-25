@@ -494,7 +494,7 @@ const Contact = () => {
                         <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Our Location</h2>
                         <div className="w-full h-80">
                             <iframe
-                                title="Smart Clean Solutions Location"
+                                title="Techno Housekeeping Location"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.314533264033!2d72.84260637521137!3d19.12218958210088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c96d43f43d1f%3A0xf9b70c8d540d1d64!2sGrace%20Plaza%2C%20Swami%20Vivekananda%20Rd%2C%20opp.%20Sabri%20Masjid%2C%20Momin%20Nagar%2C%20Jogeshwari%20West%2C%20Mumbai%2C%20Maharashtra%20400102!5e0!3m2!1sen!2sin!4v1727099600000!5m2!1sen!2sin"
                                 width="100%"
                                 height="100%"

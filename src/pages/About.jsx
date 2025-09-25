@@ -48,7 +48,7 @@ const About = () => {
                     >
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
                         <p className="text-gray-700 mb-6 leading-relaxed">
-                            Smart Clean Solutions, established in 2019, is a leading housekeeping and cleaning services company.
+                            Techno Housekeeping, established in 2019, is a leading housekeeping and cleaning services company.
                             We started small and have now become a trusted name in Maharashtra.
                         </p>
                         <p className="text-gray-700 mb-6 leading-relaxed">

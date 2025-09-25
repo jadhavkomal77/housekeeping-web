@@ -8,7 +8,7 @@ import teamImg from "../assets/istockphoto-00.jpg";
 
 const Home = () => {
     React.useEffect(() => {
-        document.title = "Smart Clean Solutions - Professional Housekeeping Services";
+        document.title = "Techno Housekeeping - Professional Housekeeping Services";
     }, []);
 
     const features = [
@@ -104,7 +104,7 @@ const Home = () => {
                         variants={staggerContainer}
                     >
                         <motion.h2 variants={fadeInUp} className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                            Why Choose Smart Clean Solutions?
+                            Why Choose Techno Housekeeping?
                         </motion.h2>
                         <motion.p variants={fadeInUp} className="text-lg sm:text-xl text-gray-600">
                             Benefits of our professional services
@@ -154,7 +154,7 @@ const Home = () => {
                     >
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">About Us</h2>
                         <p className="text-lg sm:text-xl text-gray-700 mb-6">
-                            Smart Clean Solutions is a professional cleaning service provider company. We deliver high-quality housekeeping, deep cleaning, pest control, and other home maintenance services across Maharashtra with a trusted team of experts.
+                            Techno Housekeeping is a professional cleaning service provider company. We deliver high-quality housekeeping, deep cleaning, pest control, and other home maintenance services across Maharashtra with a trusted team of experts.
                         </p>
 
                         <div className="grid grid-cols-2 gap-6 mb-10">
